@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        font-family: "Spartan", sans-serif;
+    }
+    
+    .dine {
+        padding-top: 6.5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./../images/homepage/hero-bg-desktop.jpg);
+        color: #fff;
+    }
+    
+    .dine .dine-inner {
+        height: 75rem;
+        display: grid;
+        grid-template-rows: min-content 1fr;
+    }
+      
+    .dine-content {
+        align-self: center;
+    }
+    
+    .dine-heading {
+        font-weight: 400;
+        color: white;
+        font-size: 6.4rem;
+        line-height: 1.125;
+    }
+    
+    .dine-body {
+        max-width: 45rem;
+        margin-top: 2.4rem;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.667;
+        color: white;
+    }
+      
+    .dine-button {
+        margin-top: 4.2rem;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        line-height: 1.143;
+        letter-spacing: 2px;
+        padding: 2.3rem 5.3rem;
+        text-decoration: none;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+    }
