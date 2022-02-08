@@ -57,3 +57,77 @@
         background-color: transparent;
         border: 1px solid white;
     }
+
+    .main-container {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-image: url(./../images/patterns/pattern-curve-top-right.svg),
+          url(./../images/patterns/pattern-curve-top-left.svg);
+        background-position-y: 24.2rem, bottom;
+        background-position-x: left, right;
+    }
+
+    .main-location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 7.5rem;
+    }
+
+    .main-location-image {
+        transform: translateY(-7rem);
+        width: 100%;
+    }
+
+    .main-location-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 48rem;
+        margin-left: auto;
+    }
+
+    .divider {
+        margin-bottom: 4.5rem;
+    }
+
+    .heading-two {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 1.4;
+        color: gunmetal;
+    }
+
+    .main-body-text {
+        max-width: 45rem;
+        margin-top: 2.4rem;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 1.667;
+        color: gunmetal;
+    }
+
+    .main-food {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 7.5rem;
+    }
+
+    .main-food-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 48rem;
+    }
+
+    .main-food-image {
+        position: relative;
+        transform: translateY(5rem);
+        width: 100%;
+    }
+
+    .main-food-image .pattern-lines {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateX(65%);
+    }
