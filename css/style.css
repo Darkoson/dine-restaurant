@@ -243,3 +243,37 @@
         white-space: nowrap;
         text-decoration: none;
     }
+
+/*responsiveness*/
+@media only screen and (max-width: 1024px) {
+    .reservation-container {
+      background-image: url(./../images/homepage/ready-bg-tablet.jpg);
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .reservation-container {
+      background-image: url(./../images/homepage/ready-bg-mobile.jpg);
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .dine .container {
+      grid-template-rows: min-content min-content;
+      text-align: center;
+      align-content: center;
+      justify-items: center;
+      padding-top: 10.5rem;
+      height: 90rem;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .dine .container {
+      height: 70rem;
+      padding-top: 0rem;
+    }
+  }
+  @media only screen and (max-width: 410px) {
+    .dine .container {
+      height: 65rem;
+      padding-top: 0rem;
+    }
+  }
