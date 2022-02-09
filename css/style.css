@@ -324,3 +324,22 @@ body {
       padding-top: 0rem;
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .dine-brand {
+      padding-bottom: 3rem;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .body-text {
+      margin: 2.4rem auto 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main {
+      background-image: url(./../images/patterns/pattern-curve-top-right.svg),
+        url(./../images/patterns/pattern-curve-top-left.svg);
+      background-position-y: 10rem, bottom;
+      background-position-x: -67vw, 52vw;
+    }
+  }
