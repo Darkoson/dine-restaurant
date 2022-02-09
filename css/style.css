@@ -112,6 +112,58 @@ body {
     margin-bottom: 4.5rem;
 }
 
+.heading-two {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.4;
+    color: gunmetal;
+}
+
+.heading2_dark {
+    color: var(--color-gunmetal);
+  }
+.heading2_light {
+    color: var(--color-white);
+}
+
+.bodyCopy {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.667;
+  }
+.bodyCopyDark {
+    color: var(--color-gunmetal);
+}
+.bodyCopyLight {
+    color: var(--color-white);
+}
+
+.button {
+    display: inline-block;
+    background: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.143;
+    letter-spacing: 2px;
+    padding: 2.3rem 5.3rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttonDark {
+    color: var(--color-white);
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    transition: var(--transition) background-color, var(--transition) color;
+}
+  
+.buttonLight {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: 1px solid transparent;
+    transition: var(--transition) background-color, var(--transition) color,
+      var(--transition) border-color;
+}
+
 
 .main-body-text {
     max-width: 45rem;
@@ -121,8 +173,6 @@ body {
     line-height: 1.667;
     color: gunmetal;
 }
-
-
 
 .main-food {
     display: grid;
@@ -223,7 +273,14 @@ body {
     left: 0;
     transform: translateX(-30%) translateY(-50%);
 }
-.events_slideImage {
+
+.events-slideImage {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.events_slideImage.is_active {
     display: block;
     width: 100%;
     visibility: visible;
@@ -251,6 +308,7 @@ body {
     opacity: 0;
     max-width: 45rem;
 }
+
 
 .reservation {
     background-repeat: no-repeat;
