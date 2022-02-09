@@ -18,7 +18,7 @@
         color: #fff;
     }
     
-    .dine .dine-inner {
+    .dine .container {
         height: 75rem;
         display: grid;
         grid-template-rows: min-content 1fr;
@@ -44,7 +44,7 @@
         color: white;
     }
       
-    .dine-button {
+    .button {
         margin-top: 4.2rem;
         display: inline-block;
         text-transform: uppercase;
@@ -130,4 +130,116 @@
         right: 0;
         top: 50%;
         transform: translateX(65%);
+    }
+
+    .menu-container {
+    padding: 15rem 0 10rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 7.5rem;
+    background-color: #111110;
+    }
+
+    .menu-content {
+        max-width: 47rem;
+    }
+
+    .menu-content .heading-two {
+        margin-bottom: 2rem;
+        color: white;
+    }
+
+    .menu-item {
+        display: grid;
+        grid-template-columns: 16rem 1fr;
+        grid-template-areas: "menu-image menu-text";
+        column-gap: 1.5rem;
+        padding: 2.5rem 0;
+        border-bottom: 1px solid rgba(151, 151, 151, 0.15);
+    }
+
+    .menu-item-description {
+        grid-area: menu-text;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-item-description-title {
+        font-size: 1.8rem;
+        line-height: 1.667;
+        color: white;
+        font-weight: 700;
+    }
+
+    .menu-item-description-text {
+        font-size: 1.5rem;
+        line-height: 1.667;
+        color: white;
+        font-weight: 400;
+    }
+
+    .menu-item-image {
+        grid-area: menu-image;
+        width: 12.8rem;
+    }
+
+    .events-container {
+        padding: 15rem 0 10rem 0;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+    }
+
+    .reservation-container {
+        padding: 8.5rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(./../images/homepage/ready-bg-desktop.jpg);
+    }
+
+    .footer {
+        padding: 7.5rem 0 5.5rem 0;
+        color: white;
+        z-index: 1;
+        background-color: #111110;
+    }
+    .footer .container {
+        display: grid;
+        grid-template-columns: 30rem 1fr;
+    }
+
+    .footer-brand img {
+        max-width: 10rem;
+    }
+
+    .footer-text {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 5rem;
+    }
+
+    .footer-text-address span,
+    .footer-text-hours span {
+        display: block;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 2;
+        white-space: nowrap;
+    }
+
+    .footer-text-address span .tel {
+        color: white;
+        display: block;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 2;
+        white-space: nowrap;
+        text-decoration: none;
     }
