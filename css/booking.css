@@ -285,6 +285,7 @@
     letter-spacing: 2px;
     line-height: 2;
     white-space: nowrap;
+    text-decoration: none;
   }
   
   .hero {
