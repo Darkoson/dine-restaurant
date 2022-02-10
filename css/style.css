@@ -125,6 +125,12 @@ body {
     outline: none;
   }
 
+  .heading-one {
+    color: var(--color-white);
+    font-size: 6.4rem;
+    line-height: 1.125;
+  }
+
 .heading-two {
     font-weight: 700;
     font-size: 4rem;
