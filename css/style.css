@@ -395,8 +395,10 @@ body {
     background-image: url(./../images/homepage/ready-bg-desktop.jpg);
 }
 
-/* END OF CSS STYLING FOR EVENT TABS*/
-  
+.reservation .heading-two {
+    color: white;
+}
+
 .reservation-container {
     margin: 0 auto;
     max-width: 95%;
