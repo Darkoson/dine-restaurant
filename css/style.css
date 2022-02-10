@@ -125,11 +125,11 @@ body {
     outline: none;
   }
 
-  .heading-one {
+.heading-one {
     color: var(--color-white);
     font-size: 6.4rem;
     line-height: 1.125;
-  }
+}
 
 .heading-two {
     font-weight: 700;
@@ -279,17 +279,20 @@ body {
 }
 
 .events-manual .container {
-    margin: 0 auto;
-    max-width: 95%;
-    min-width: 32rem;
-    width: 111rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5rem;
+    grid-template-areas: "events-images events-content";
+}
+
+.events-slideImages {
+    position: relative;
+    box-shadow: var(--card-shadow);
 }
 
 .eventsImages .pattern-lines {
     z-index: 6;
+    position: absolute;
     top: 0;
     left: 0;
     transform: translateX(-30%) translateY(-50%);
