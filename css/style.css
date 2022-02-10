@@ -73,12 +73,6 @@ body {
     border: 1px solid white;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
 .main {
     background-color: white;
     background-repeat: no-repeat;
@@ -116,25 +110,6 @@ img {
 
 .divider {
     margin-bottom: 4.5rem;
-}
-
-@keyframes slide-fade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  input:focus {
-    outline: none;
-  }
-
-.heading-one {
-    color: var(--color-white);
-    font-size: 6.4rem;
-    line-height: 1.125;
 }
 
 .heading-two {
@@ -188,7 +163,6 @@ img {
     transition: var(--transition) background-color, var(--transition) color,
       var(--transition) border-color;
 }
-
 
 .main-body-text {
     max-width: 45rem;
@@ -298,7 +272,6 @@ img {
     left: 0;
     transform: translateX(-30%) translateY(-50%);
 }
-
 
 /* CSS STYLING FOR THE EVENTS TABS */
 
@@ -417,6 +390,7 @@ img {
 }
 
 /* END OF CSS STYLING FOR EVENT TABS*/
+
 .reservation {
     background-repeat: no-repeat;
     background-size: cover;
@@ -483,40 +457,6 @@ img {
     white-space: nowrap;
     text-decoration: none;
 }
-
-
-/* hover states */
-    .dine-content a:hover {
-        color: #111111;
-        background-color: #ffffff;
-        border-color: #111111;
-        cursor: pointer;
-        
-    }
-
-    .reservation a:hover{
-        background-color: #ffffff;
-        color: #111111;
-        border-color: #111111;
-        cursor: pointer;
-    }
-
-    .footer-text-address a:hover{
-        color: aqua;
-        cursor: pointer;
-        transition-timing-function: ease-in-out;
-        transition-duration: 0.5s;
-        transform: scaleX(1.2)
-    }
-
-    .footer-text-hours span:hover{
-        color: aqua;
-    }
-
-    .menu-item-description p:hover{
-        color: #9e7f66;
-        cursor: zoom-in;
-    }
 
 /*responsiveness*/
 @media only screen and (max-width: 1024px) {
@@ -692,7 +632,6 @@ img {
     }
   }
 
-
   @media only screen and (max-width: 768px) {
     .heading-one {
       font-size: 4.8rem;
@@ -721,6 +660,7 @@ img {
       flex-direction: column;
     }
   }
+
   @media only screen and (max-width: 1024px) {
     .reservation-container .container .heading-two {
       margin-bottom: 2.5rem;
