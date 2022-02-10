@@ -252,6 +252,29 @@ body {
     width: 12.8rem;
 }
 
+.events {
+    padding: 15rem 0 10rem 0;
+    background-color: white;
+}
+
+.events-container {
+    margin: 0 auto;
+    max-width: 95%;
+    min-width: 32rem;
+    width: 111rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+}
+
+.events-images .pattern-lines {
+    z-index: 6;
+    top: 0;
+    left: 0;
+    transform: translateX(-30%) translateY(-50%);
+}
+
+
 /* CSS STYLING FOR THE EVENTS TABS */
 
 .events-manual {
@@ -464,3 +487,213 @@ body {
         color: #9e7f66;
         cursor: zoom-in;
     }
+
+/*responsiveness*/
+@media only screen and (max-width: 1024px) {
+    .reservation-container {
+      background-image: url(./../images/homepage/ready-bg-tablet.jpg);
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .reservation-container {
+      background-image: url(./../images/homepage/ready-bg-mobile.jpg);
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .dine .container {
+      grid-template-rows: min-content min-content;
+      text-align: center;
+      align-content: center;
+      justify-items: center;
+      padding-top: 10.5rem;
+      height: 90rem;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .dine .container {
+      height: 70rem;
+      padding-top: 0rem;
+    }
+  }
+  @media only screen and (max-width: 410px) {
+    .dine .container {
+      height: 65rem;
+      padding-top: 0rem;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .dine-brand {
+      padding-bottom: 3rem;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .body-text {
+      margin: 2.4rem auto 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main {
+      background-image: url(./../images/patterns/pattern-curve-top-right.svg),
+        url(./../images/patterns/pattern-curve-top-left.svg);
+      background-position-y: 10rem, bottom;
+      background-position-x: -67vw, 52vw;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .main {
+      background-image: none;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-location {
+      grid-template-columns: 1fr;
+      grid-template-areas: "location-image" "location-content";
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-location-image img {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-location-content {
+      max-width: 45rem;
+      margin: 0 auto 8rem auto;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .main-location-content {
+      max-width: 35rem;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-food {
+      grid-template-columns: 1fr;
+      grid-template-areas: "food-image" "food-content";
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-food-image img {
+      transform: translateY(0);
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-food-image .pattern-lines {
+      transform: translateX(0);
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .main-food-image .pattern-lines {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-food-content {
+      max-width: 45rem;
+      margin: 8rem auto 8rem auto;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .main-food-content {
+      max-width: 35rem;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .menu {
+      padding: 10rem 0;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .menu .container {
+      grid-template-columns: 1fr;
+      grid-template-areas: "menu-content" "menu-items";
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .menu-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto 5rem auto;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .menu-content {
+      max-width: 35rem;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .menu-items {
+      max-width: 56rem;
+      margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .menu-items {
+      max-width: 35rem;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .menu-item {
+      grid-template-columns: 1fr;
+      grid-template-areas: "menu-image" "menu-text";
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .menu-item-image {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .menu-item-description {
+      margin-top: 3rem;
+      text-align: center;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .heading-one {
+      font-size: 4.8rem;
+      line-height: 1.333;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .dine-heading {
+      font-size: 3.2rem;
+      line-height: 1.25;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .heading-two {
+      font-size: 3.2rem;
+      line-height: 1.25;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .body-text {
+      font-size: 1.5rem;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .reservation-container .container {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .reservation-container .container .heading-two {
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+  }
