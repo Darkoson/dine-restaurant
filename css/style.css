@@ -1,3 +1,19 @@
+:root {
+  --color-beaver: #9e7f66;
+  --color-xiketic: #17192b;
+  --color-gunmetal: #242b37;
+  --color-black-coral: #5c6779;
+  --color-davys-grey: #4c4c4c;
+  --color-white: #ffffff;
+  --color-black: #111111;
+  --color-border: rgba(151, 151, 151, 0.15);
+  --color-dark-blue-shadow: rgba(56, 66, 85, 0.5);
+  --color-error: #b54949;
+  --color-sucess: #77c72b;
+  --transition: 300ms ease-in-out;
+  --transition-2: 100ms ease-in-out;
+  --card-shadow: 0 7.5rem 10rem -5rem var(--color-dark-blue-shadow);
+}
 *,
 *::before,
 *::after {
@@ -14,7 +30,7 @@ html {
 
 body {
     font-family: "Spartan", sans-serif;
-    background-color: white;
+    background-color: var(--color-black);
     min-height: 100vh;
     min-width: 32rem;
     overflow-x: hidden;
@@ -276,16 +292,23 @@ body {
 
 /* CSS STYLING FOR THE EVENTS TABS */
 
-.events-manual {
+.events {
     padding: 15rem 0 10rem 0;
-    background-color: white;
+    background-color: var(--color-white);
 }
 
-.events-manual .container {
+.container {
+  margin: 0 auto;
+  max-width: 95%;
+  min-width: 32rem;
+  width: 111rem;
+}
+
+.events .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5rem;
-    grid-template-areas: "eventsImages eventsContent";
+    grid-template-areas: "events-images events-content";
 }
 
 .events-slideImages {
