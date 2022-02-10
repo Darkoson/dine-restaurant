@@ -259,7 +259,7 @@ body {
     background-color: white;
 }
 
-.events-container {
+.events-manual .container {
     margin: 0 auto;
     max-width: 95%;
     min-width: 32rem;
@@ -269,7 +269,7 @@ body {
     column-gap: 5rem;
 }
 
-.events-images .pattern-lines {
+.eventsImages .pattern-lines {
     z-index: 6;
     top: 0;
     left: 0;
@@ -282,7 +282,7 @@ body {
     opacity: 0;
 }
 
-.events_slideImage.is_active {
+.events_slideImage.is-active {
     display: block;
     width: 100%;
     visibility: visible;
