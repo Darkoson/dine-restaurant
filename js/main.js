@@ -1,12 +1,11 @@
 const buttons_slide = document.querySelectorAll('.events-slideIndicator')
 const images_slide = document.querySelectorAll('.events-slideImage')
-const content_slide = document.querySelectorAll('.events-slideContentItem')
+const content_slide = document.querySelectorAll('.events-slideContent-item')
 
 function click_slide(event) {
     image_slide_remove()
     content_slide_remove()
     indicator_remove()
-
     this.classList.add('is-active');
     const content_slide = document.querySelector(`#${this.id}-content`);
     const image_slide = document.querySelector(`#${this.id}-image`);
@@ -15,8 +14,8 @@ function click_slide(event) {
 }
 
 function image_slide_remove(){
-    content_slide.forEach(element => {
-        element.classList.remove('is-active')
+    content_slide.forEach(item => {
+        item.classList.remove('is-active')
     });
 }
 
