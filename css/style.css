@@ -121,10 +121,10 @@ body {
 }
 
 .heading2_dark {
-    color: gunmetal;
+    color: var(--color-gunmetal);
   }
 .heading2_light {
-    color: white;
+    color: var(--color-white);
 }
 
 .bodyCopy {
@@ -133,10 +133,10 @@ body {
     line-height: 1.667;
   }
 .bodyCopyDark {
-    color: gunmetal;
+    color: var(--color-gunmetal);
 }
 .bodyCopyLight {
-    color: white;
+    color: var(--color-white);
 }
 
 .button {
@@ -154,15 +154,15 @@ body {
     color: white;
     background-color: transparent;
     border: 1px solid white;
-    transition: 300ms ease-in-out background-color, 300ms ease-in-out color;
+    transition: 3var(--transition) background-color, var(--transition) color;
 }
   
 .buttonLight {
     color: var(--color-white);
     background-color: var(--color-black);
     border: 1px solid transparent;
-    transition: 300ms ease-in-out background-color, 300ms ease-in-out color,
-      300ms ease-in-out border-color;
+    transition: var(--transition) background-color, var(--transition) color,
+    var(--transition) border-color;
 }
 
 .main-body-text {
@@ -293,7 +293,7 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-.eventsImages .pattern-lines {
+.events-slideImages .pattern-lines {
     z-index: 6;
     top: 0;
     left: 0;
