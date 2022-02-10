@@ -119,6 +119,51 @@ body {
     color: gunmetal;
 }
 
+.heading2_dark {
+    color: var(--color-gunmetal);
+  }
+.heading2_light {
+    color: var(--color-white);
+}
+
+.bodyCopy {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.667;
+  }
+.bodyCopyDark {
+    color: var(--color-gunmetal);
+}
+.bodyCopyLight {
+    color: var(--color-white);
+}
+
+.button {
+    display: inline-block;
+    background: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 1.143;
+    letter-spacing: 2px;
+    padding: 2.3rem 5.3rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttonDark {
+    color: var(--color-white);
+    background-color: transparent;
+    border: 1px solid var(--color-white);
+    transition: var(--transition) background-color, var(--transition) color;
+}
+  
+.buttonLight {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: 1px solid transparent;
+    transition: var(--transition) background-color, var(--transition) color,
+      var(--transition) border-color;
+}
+
 .main-body-text {
     max-width: 45rem;
     margin-top: 2.4rem;
@@ -228,12 +273,134 @@ body {
     transform: translateX(-30%) translateY(-50%);
 }
 
+/* CSS STYLING FOR THE EVENTS TABS */
+
+.events-manual {
+    padding: 15rem 0 10rem 0;
+    background-color: white;
+}
+
+.events-manual .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    grid-template-areas: "eventsImages eventsContent";
+}
+
+.events-slideImages {
+    position: relative;
+    box-shadow: var(--card-shadow);
+}
+
+.eventsImages .pattern-lines {
+    z-index: 6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-30%) translateY(-50%);
+}
+
+.events-slideImage {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.events-slideImage.is-active {
+    display: block;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+    animation: slide-fade var(--transition-2);
+}
+
+.events-slideContent {
+    margin-left: 7.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.events-slideContent-items {
+    min-height: 20rem;
+    margin-bottom: 3rem;
+}
+
+.events-slideContent-item {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    max-width: 45rem;
+}
+
+.events-slideContent-item.is-active{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    animation: slide-fade var(--transition-2);
+}
+
+.events-slideContent-item .heading-two {
+    margin-bottom: 1rem;
+}
+
+.events-slideContent-item .bodyCopy {
+    margin-bottom: 2rem;
+}
+
+.events-slideIndicators {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.events-slideIndicator {
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    color: var(--color-davys-grey);
+    transition: opacity var(--transition-2);
+    opacity: 0.5;
+}
+
+.events-slideIndicator.is-active {
+    position: relative;
+    opacity: 1;
+}
+
+.events-slideIndicator.is-active::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    border-top: 1px solid var(--color-beaver);
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 9.5rem;
+    transform: translateY(0.8rem) translateX(-12.5rem);
+}
+
+/* END OF CSS STYLING FOR EVENT TABS*/
+
 .reservation {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(./../images/homepage/ready-bg-desktop.jpg);
 }
-  
+
+.reservation .heading-two {
+    color: white;
+}
+
 .reservation-container {
     margin: 0 auto;
     max-width: 95%;
@@ -465,7 +632,6 @@ body {
     }
   }
 
-
   @media only screen and (max-width: 768px) {
     .heading-one {
       font-size: 4.8rem;
@@ -494,6 +660,7 @@ body {
       flex-direction: column;
     }
   }
+
   @media only screen and (max-width: 1024px) {
     .reservation-container .container .heading-two {
       margin-bottom: 2.5rem;
