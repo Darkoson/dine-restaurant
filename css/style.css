@@ -324,7 +324,6 @@ body {
       padding-top: 0rem;
     }
 }
-
 @media only screen and (max-width: 1024px) {
     .dine-brand {
       padding-bottom: 3rem;
@@ -341,5 +340,49 @@ body {
         url(./../images/patterns/pattern-curve-top-left.svg);
       background-position-y: 10rem, bottom;
       background-position-x: -67vw, 52vw;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .main {
+      background-image: none;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-location {
+      grid-template-columns: 1fr;
+      grid-template-areas: "location-image" "location-content";
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-location-image img {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-location-content {
+      max-width: 45rem;
+      margin: 0 auto 8rem auto;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .main-location-content {
+      max-width: 35rem;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-food {
+      grid-template-columns: 1fr;
+      grid-template-areas: "food-image" "food-content";
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .main-food-image img {
+      transform: translateY(0);
+      width: 90%;
+      margin: 0 auto;
     }
   }
