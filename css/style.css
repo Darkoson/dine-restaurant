@@ -386,9 +386,6 @@ body {
       margin: 0 auto;
     }
   }
-
-
-
   @media only screen and (max-width: 1024px) {
     .main-food-image .pattern-lines {
       transform: translateX(0);
@@ -442,5 +439,28 @@ body {
     .menu-items {
       max-width: 56rem;
       margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .menu-items {
+      max-width: 35rem;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .menu-item {
+      grid-template-columns: 1fr;
+      grid-template-areas: "menu-image" "menu-text";
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .menu-item-image {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .menu-item-description {
+      margin-top: 3rem;
+      text-align: center;
     }
   }
