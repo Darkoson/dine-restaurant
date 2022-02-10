@@ -294,7 +294,6 @@ body {
 
 .eventsImages .pattern-lines {
     z-index: 6;
-    position: absolute;
     top: 0;
     left: 0;
     transform: translateX(-30%) translateY(-50%);
