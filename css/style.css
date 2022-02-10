@@ -164,7 +164,6 @@ body {
       var(--transition) border-color;
 }
 
-
 .main-body-text {
     max-width: 45rem;
     margin-top: 2.4rem;
@@ -274,7 +273,6 @@ body {
     transform: translateX(-30%) translateY(-50%);
 }
 
-
 /* CSS STYLING FOR THE EVENTS TABS */
 
 .events-manual {
@@ -283,17 +281,20 @@ body {
 }
 
 .events-manual .container {
-    margin: 0 auto;
-    max-width: 95%;
-    min-width: 32rem;
-    width: 111rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5rem;
+    grid-template-areas: "eventsImages eventsContent";
+}
+
+.events-slideImages {
+    position: relative;
+    box-shadow: var(--card-shadow);
 }
 
 .eventsImages .pattern-lines {
     z-index: 6;
+    position: absolute;
     top: 0;
     left: 0;
     transform: translateX(-30%) translateY(-50%);
@@ -305,7 +306,7 @@ body {
     opacity: 0;
 }
 
-.events_slideImage.is-active {
+.events-slideImage.is-active {
     display: block;
     width: 100%;
     visibility: visible;
@@ -314,7 +315,7 @@ body {
     animation: slide-fade var(--transition-2);
 }
 
-.events_slideContent {
+.events-slideContent {
     margin-left: 7.5rem;
     display: flex;
     align-items: flex-start;
@@ -322,30 +323,30 @@ body {
     flex-direction: column;
 }
 
-.events-slideContentItems {
+.events-slideContent-items {
     min-height: 20rem;
     margin-bottom: 3rem;
 }
 
-.events-slideContentItem {
+.events-slideContent-item {
     display: none;
     visibility: hidden;
     opacity: 0;
     max-width: 45rem;
 }
 
-.events-slideContentItem is-active{
+.events-slideContent-item.is-active{
     display: block;
     visibility: visible;
     opacity: 1;
     animation: slide-fade var(--transition-2);
 }
 
-.events-slideContentItem .heading-two {
+.events-slideContent-item .heading-two {
     margin-bottom: 1rem;
 }
 
-.events-slideContentItem .bodyCopy {
+.events-slideContent-item .bodyCopy {
     margin-bottom: 2rem;
 }
 
@@ -389,6 +390,7 @@ body {
 }
 
 /* END OF CSS STYLING FOR EVENT TABS*/
+
 .reservation {
     background-repeat: no-repeat;
     background-size: cover;
@@ -455,40 +457,6 @@ body {
     white-space: nowrap;
     text-decoration: none;
 }
-
-
-/* hover states */
-    .dine-content a:hover {
-        color: #111111;
-        background-color: #ffffff;
-        border-color: #111111;
-        cursor: pointer;
-        
-    }
-
-    .reservation a:hover{
-        background-color: #ffffff;
-        color: #111111;
-        border-color: #111111;
-        cursor: pointer;
-    }
-
-    .footer-text-address a:hover{
-        color: aqua;
-        cursor: pointer;
-        transition-timing-function: ease-in-out;
-        transition-duration: 0.5s;
-        transform: scaleX(1.2)
-    }
-
-    .footer-text-hours span:hover{
-        color: aqua;
-    }
-
-    .menu-item-description p:hover{
-        color: #9e7f66;
-        cursor: zoom-in;
-    }
 
 /*responsiveness*/
 @media only screen and (max-width: 1024px) {
@@ -664,7 +632,6 @@ body {
     }
   }
 
-
   @media only screen and (max-width: 768px) {
     .heading-one {
       font-size: 4.8rem;
@@ -693,6 +660,7 @@ body {
       flex-direction: column;
     }
   }
+
   @media only screen and (max-width: 1024px) {
     .reservation-container .container .heading-two {
       margin-bottom: 2.5rem;
