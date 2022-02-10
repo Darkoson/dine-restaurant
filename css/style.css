@@ -1,3 +1,19 @@
+:root {
+  --color-beaver: #9e7f66;
+  --color-xiketic: #17192b;
+  --color-gunmetal: #242b37;
+  --color-black-coral: #5c6779;
+  --color-davys-grey: #4c4c4c;
+  --color-white: #ffffff;
+  --color-black: #111111;
+  --color-border: rgba(151, 151, 151, 0.15);
+  --color-dark-blue-shadow: rgba(56, 66, 85, 0.5);
+  --color-error: #b54949;
+  --color-sucess: #77c72b;
+  --transition: 300ms ease-in-out;
+  --transition-2: 100ms ease-in-out;
+  --card-shadow: 0 7.5rem 10rem -5rem var(--color-dark-blue-shadow);
+}
 *,
 *::before,
 *::after {
@@ -14,7 +30,7 @@ html {
 
 body {
     font-family: "Spartan", sans-serif;
-    background-color: white;
+    background-color: var(--color-black);
     min-height: 100vh;
     min-width: 32rem;
     overflow-x: hidden;
@@ -121,10 +137,10 @@ body {
 }
 
 .heading2_dark {
-    color: gunmetal;
+    color: var(--color-gunmetal);
   }
 .heading2_light {
-    color: white;
+    color: var(--color-white);
 }
 
 .bodyCopy {
@@ -133,10 +149,10 @@ body {
     line-height: 1.667;
   }
 .bodyCopyDark {
-    color: gunmetal;
+    color: var(--color-gunmetal);
 }
 .bodyCopyLight {
-    color: white;
+    color: var(--color-white);
 }
 
 .button {
@@ -154,15 +170,15 @@ body {
     color: white;
     background-color: transparent;
     border: 1px solid white;
-    transition: 300ms ease-in-out background-color, 300ms ease-in-out color;
+    transition: 3var(--transition) background-color, var(--transition) color;
 }
   
 .buttonLight {
     color: var(--color-white);
     background-color: var(--color-black);
     border: 1px solid transparent;
-    transition: 300ms ease-in-out background-color, 300ms ease-in-out color,
-      300ms ease-in-out border-color;
+    transition: var(--transition) background-color, var(--transition) color,
+    var(--transition) border-color;
 }
 
 .main-body-text {
@@ -276,16 +292,43 @@ body {
 
 /* CSS STYLING FOR THE EVENTS TABS */
 
-.events-manual {
+.events {
     padding: 15rem 0 10rem 0;
-    background-color: white;
+    background-color: var(--color-white);
 }
 
-.events-manual .container {
+.container {
+  margin: 0 auto;
+  max-width: 95%;
+  min-width: 32rem;
+  width: 111rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.divider {
+  margin-bottom: 4.5rem;
+}
+
+@keyframes slide-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.events .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5rem;
-    grid-template-areas: "eventsImages eventsContent";
+    grid-template-areas: "events-images events-content";
 }
 
 .events-slideImages {
@@ -293,8 +336,9 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-.eventsImages .pattern-lines {
+.events-slideImages .pattern-lines {
     z-index: 6;
+    position: absolute;
     top: 0;
     left: 0;
     transform: translateX(-30%) translateY(-50%);
