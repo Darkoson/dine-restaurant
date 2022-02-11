@@ -263,7 +263,9 @@ body {
     font-weight: 400;
 }
 
-.menu-item picture {
+.menu-item-image {
+    grid-area: menu-image;
+    width: 12.8rem;
     z-index: 1;
     content: "";
     border-top: 1px solid var(--color-beaver);
@@ -272,11 +274,6 @@ body {
     height: 1px;
     width: 3.2rem;
     transform: translateY(2rem);
-}
-  
-.menu-item-image {
-    grid-area: menu-image;
-    width: 100%;
 }
 
 .events {
