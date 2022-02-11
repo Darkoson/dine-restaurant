@@ -1,6 +1,6 @@
-const slideButtons = document.querySelectorAll('.events-slide__indicator')
-const slideImages = document.querySelectorAll('.events-slide__image')
-const slideContent = document.querySelectorAll('.events-slide__content-item')
+const slideButtons = document.querySelectorAll('.events-slide-indicator')
+const slideImages = document.querySelectorAll('.events-slide-image')
+const slideContent = document.querySelectorAll('.events-slide-content-item')
 
 function slideClick(event) {
     removeImageSlide()
