@@ -704,11 +704,11 @@
   }
 
   #minus:hover{
-    border-radius: 50%;
+    border-radius: 6px;
     border-color: var(--color-black);
   }
 
   #plus:hover{
-    border-radius: 50%;
+    border-radius: 6px;
     border-color: var(--color-black);
   }
