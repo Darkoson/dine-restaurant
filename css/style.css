@@ -727,22 +727,6 @@ img {
     cursor: pointer;
 }
 
-.footer-text-address a:hover{
-    cursor: pointer;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.5s;
-    transform: scaleX(1.2)
-}
-
-.footer-text-hours span:hover{
-    color: #9e7f66;
-}
-
-.menu-item-description p:hover{
-    color: var(--color-sucess);
-    cursor: zoom-in;
-}
-
 .events-slideContent a:hover{
    background-color: #ffffff;
    color: #111111;
