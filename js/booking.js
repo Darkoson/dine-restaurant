@@ -109,5 +109,3 @@ form.addEventListener('submit', event => {
     checkNumLength(hour, 1, 12)
     checkNumLength(minute, 00, 59)
 })
-
-
