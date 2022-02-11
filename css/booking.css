@@ -675,3 +675,40 @@
     background-repeat: no-repeat;
     background-image: url(./../images/patterns/pattern-curve-bottom-right.svg);
   }
+
+  /* hover states */
+  .footer-details__address a:hover{
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transform: scaleX(1.2)
+  }
+
+  .footer-details__hours span:hover{
+    color: #9e7f66;
+  }
+
+  .reservations-form__button:hover{
+    background-color: #ffffff;
+    color: #111111;
+    border-color: #9e7f66;
+    cursor: pointer;
+  }
+
+  .reservations-form__input:hover{
+    border-color: #b54949;
+  }
+
+  #meridiem:hover{
+    border-color: #b54949;
+  }
+
+  #minus:hover{
+    border-radius: 50%;
+    border-color: var(--color-black);
+  }
+
+  #plus:hover{
+    border-radius: 50%;
+    border-color: var(--color-black);
+  }
