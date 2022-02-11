@@ -728,7 +728,6 @@ img {
 }
 
 .footer-text-address a:hover{
-    color: aqua;
     cursor: pointer;
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
@@ -736,10 +735,35 @@ img {
 }
 
 .footer-text-hours span:hover{
-    color: aqua;
+    color: #9e7f66;
 }
 
 .menu-item-description p:hover{
-    color: #9e7f66;
+    color: var(--color-sucess);
     cursor: zoom-in;
+}
+
+.events-slideContent a:hover{
+   background-color: #ffffff;
+   color: #111111;
+   border-color: #9e7f66;
+   cursor: pointer;
+}
+
+.events-slideIndicators:hover{
+  color: aqua;
+  cursor: pointer;
+}
+
+#family-gathering:hover{
+  color: var(--color-error);
+  cursor: pointer;
+}
+#special-events:hover{
+  color: var(--color-error);
+  cursor: pointer;
+}
+#social-events:hover{
+  color: var(--color-error);
+  cursor: pointer;
 }
