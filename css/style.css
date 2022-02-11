@@ -276,7 +276,7 @@ body {
   
 .menu-item-image {
     grid-area: menu-image;
-    width: 12.8rem;
+    width: 100%;
 }
 
 .events {
