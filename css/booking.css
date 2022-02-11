@@ -677,17 +677,6 @@
   }
 
   /* hover states */
-  .footer-details__address a:hover{
-    cursor: pointer;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.5s;
-    transform: scaleX(1.2)
-  }
-
-  .footer-details__hours span:hover{
-    color: #9e7f66;
-  }
-
   .reservations-form__button:hover{
     background-color: #ffffff;
     color: #111111;
