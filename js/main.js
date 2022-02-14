@@ -35,3 +35,6 @@ function indicator_remove(){
 buttons_slide.forEach(button => {
     button.addEventListener('click', click_slide)
 });
+
+
+
