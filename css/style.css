@@ -46,13 +46,6 @@ body {
   width: 111rem;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-
 .divider {
   margin-bottom: 4.5rem;
 }
@@ -372,7 +365,6 @@ input:focus {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateX(65%);
 }
 
 .main-food-content {
@@ -492,7 +484,6 @@ input:focus {
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translateX(-50%) translateY(35%);
 }
 
 .reservations-heading {
