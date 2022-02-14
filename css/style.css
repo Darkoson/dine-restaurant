@@ -650,10 +650,22 @@ input:focus {
   text-decoration: none;
   border: 1px solid transparent;
   width: 100%;
-  transition: var(--transition) background-color, var(--transition) color,
-    var(--transition) border-color;
+  transition: var(--transition) background-color, var(--transition) border-color;
 }
 
+.reservations-form-button-text {
+   color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  line-height: 1.143;
+  letter-spacing: 2px;
+  padding: 2.3rem 5.3rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+  width: 100%;
+  transition: var(--transition) color;
+}
 .reservations-form-button-numpicker {
   cursor: pointer;
   border: 1px solid transparent;
